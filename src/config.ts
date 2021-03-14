@@ -10,7 +10,7 @@ export const embedColor = process.env.CONFIG_EMBED_COLOR?.toUpperCase() ?? "7289
 export const owners: string[] = process.env.CONFIG_OWNERS?.replace(/  +/g, " ").split(/,[ ]?/) ?? [];
 export const YouTubeDataRetrievingStrategy = process.env.CONFIG_YOUTUBE_DATA_STRATEGY?.toLowerCase() as ("scrape" | "api" | undefined) ?? "scrape";
 export const totalShards: string | number = process.env.CONFIG_TOTALSHARDS?.toLowerCase() ?? "auto";
-export const defaultVolume = Number(process.env.CONFIG_DEFAULT_VOLUME) || 50;
+export const defaultVolume = Number(process.env.CONFIG_DEFAULT_VOLUME) || 100;
 export const maxVolume = Number(process.env.CONFIG_MAX_VOLUME) || 100;
 export const disableSongSelection = process.env.CONFIG_DISABLE_SONG_SELECTION?.toLowerCase() === "yes";
 export const searchMaxResults = Number(process.env.CONFIG_SEARCH_MAX_RESULTS) || 10;
