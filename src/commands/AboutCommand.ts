@@ -42,7 +42,7 @@ Bot Version        :: v${(await import(path.resolve(process.cwd(), "package.json
 Data Strategy      :: ${await this.client.config.YouTubeDataRetrievingStrategy === "api" ? "REST API" : "HTML SCRAPING"}
 \`\`\`
         `)
-                .setAuthor(`${this.client.user?.username as string} - A simple Discord music bot`)
+                .setAuthor(`${this.client.user?.username as string} - Artistic All VC music Bot`)
         ).catch(e => this.client.logger.error("ABOUT_CMD_ERR:", e));
     }
 
